@@ -44,7 +44,7 @@ export const Banner = () => {
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {"Hi, I'm smplcod"}
-              <span className="wrap">web developer</span>
+              <span className="wrap">{text}</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
