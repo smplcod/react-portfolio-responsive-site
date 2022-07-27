@@ -14,7 +14,7 @@ export const Banner = () => {
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      ticker();
+      tick();
     }, delta);
     return () => clearInterval(ticker);
   }, [text]);
@@ -25,7 +25,9 @@ export const Banner = () => {
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
+
     setText(updatedText);
+
     if (isDeleting) {
       setDelta((prevDelta) => prevDelta / 2);
     }
@@ -33,6 +35,9 @@ export const Banner = () => {
       setIsDeleting(true);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
     }
   };
 

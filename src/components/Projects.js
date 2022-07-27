@@ -1,0 +1,48 @@
+import { Col, Container, Row } from "react-bootstrap";
+
+export const Project = () => {
+  const projects = [
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+  ];
+  return (
+    <section className="project" id="project">
+      <Container>
+        <Row>
+          <Col>
+            <h2>Projects</h2>
+          </Col>
+        </Row>
+      </Container>
+      ``
+    </section>
+  );
+};
